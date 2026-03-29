@@ -128,12 +128,44 @@ print(c_F(99))"""
     return factorial
 print(factorial(3))"""
 
-def sum(n):
+"""def sum(n):
     sum=0
     total=0
     for i in range(1,n+1):
         sum=sum+i
         total+=sum
     return total
-print(sum(10))
+print(sum(10))"""
+
+"""def gcd(a,b):
+    while b!=0:
+        a,b=b,a%b
+    return a
+print(gcd(16,19))"""
+
+"""def gcd(a,b):
+    while b!=0:
+        a,b=b,a%b
+    return a
+def lcm(a,b):
+    return (a*b)//gcd(a,b)
+print(lcm(12,18))"""
+"""def sum(n):
+    total=0
+    for i in range(1,n+1):
+
+        total+=i
+    return total
+print(sum(10))"""
+
+def set(s):
+    unique=set()
+    for i in range(s):
+        unique.add(i)
+    return unique
+print(set([1,2,3,4,4,5,5,6]))
+
+
+
+
 
