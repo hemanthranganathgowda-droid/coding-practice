@@ -1,38 +1,37 @@
-students={
-"s1":{"name":"ranga","age":18,"course":"computer science"},
-"s2":{"name":"hema","age":19,"course":"electronics"},
-"s3":{"name":"nithya","age":18,"course":"BSC in cs"}
-}
-"""print(students["s1"]["name"])
-print(students["s3"]["name"])
-students["s2"]["name"]="inchara"
-print(students["s2"]["name"])
-del students["s3"]["name"]
-print(students["s3"])"""
+"""employee={
+    "name":"john",
+    "age":25,
+    "course":"python",
+    "country":"india",
+    "experience":"15 years",
+    "hobbies":"cricket, Mastuburation,watching corns,raging",}"""
 
-"""students["s4"]={"name":"siri","age":18,"course":"BSC in cs"}
-print(students["s4"])
-print(students.keys())
-print(students.values())
-print(students.items())"""
-"""print(students.get("s1"))
-print(students.get("s1"),"student not found")"""
-
-"""if "inchara" in students and "ranga" in students:
-    print("ranga loves inchara and both are marrying themselves")
-else:
-    print("inchara loves ranga and ranga loves nithya")"""
-"""def add(a,b,c):
-    return a+b+c
-a, b, c="inchara",  "loves",  "ranga"
-print(add(a,b,c))"""
-print(len(students))
-dictionary={}
-
-dictionary["name"]="chaya"
-print(dictionary)
+#print(employee["name"])
+#print(employee["hobbies"])
+"""for key,value in employee.items():
+    print(f"{key}: {value}")"""
+"""total=len(employee.values())
+print(total)"""
 
 
+"""numbers={
+"one":1,
+"two":2,
+"three":3,
+"four":4,
+"five":5,
+"six":6,
+"seven":7,
+"eight":8,
+"nine":9,
+"ten":10,
+"eleven":11}
+print(min(numbers.values()))
 
+merge={**employee,**numbers}
+print(merge)"""
 
-
+keys=["name","age","course","country","rating"]
+values=["meha",25,"python","south african",9]
+d=dict(zip(keys,values))
+print(d)
