@@ -1,73 +1,97 @@
-"""class car:
-    def __init__(self,model,colour,brand):
-        self.model=model
-        self.colour=colour
-        self.brand=brand
-    def display_details(self):
-        print(f"Car Model: {self.model}")
-        print(f"Car Colour: {self.colour}")
-        print(f"Car Brand: {self.brand}")
-c1=car("2007","red","BMW")
-c1.display_details()
-print(c1.model)"""
-
 """class student:
-    def __init__(self,name,marks):
-        self.marks=marks
+    def __init__(self,name,age):
+        self.age=age
         self.name=name
-    def display(self):
-        self.marks+=10
-        print("updated students marks:",self.marks)
-s1=student("hemanth",80)
-s2=student("nithya",70)
-s3=student("muttu",85)
-s1.display()
-s2.display()
-s3.display()"""
+    def display_details(self):
+        print("name",self.name)
+        print("age",self.age)
+s1=student("ranganath",18)
+s1.display_details()
+print(s1.name)"""
+"""class car:
+    def __init__(self,start):
+        self.start=start
+    def start_engine(self):
+        print("engine started",self.start)
+c1=car("yes")
+c1.start_engine()"""
 
-"""class banck_account:
-    def __init__(self,balance):
-        self.__balance=balance
-        
-    def deposit(self,amount):
-        self.__balance+=amount
-    def withdraw(self,amount):
-        self.__balance-=amount
+"""class rectangle:
+    def __init__(self,length,width):
+        self.width=width
+        self.length=length
+    def area(self):
+        return self.length*self.width
+r1=rectangle(2,3)
+r1.area()
+print(r1.area())"""
+
+"""class circle:
+    def __init__(self,radius):
+        self.radius=radius
+    def circumference(self):
+        return 2*3.14*self.radius
+c1=circle(5)
+print(c1.circumference())"""
+
+"""class employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
     def display(self):
-        print("self balance :",self.__balance)
-b1=banck_account(50004)
-b1.deposit(1000)
-b1.withdraw(1014)
-b1.display()"""
+        print("Name",self.name)
+        print("salary",self.salary)
+e1=employee("ramu",50000)
+print(e1.name)
+print(e1.salary)"""
+"""class banckaccount:
+    def __init__(self,balance):
+        self.balance=balance
+    def deposit(self,amount):
+        self.balance+=amount
+    def withdraw(self,amount):
+        self.balance-=amount
+    def display_balance(self):
+        print("Balance",self.balance)
+b1=banckaccount(500)
+b1.deposit(1078)
+b1.withdraw(205)
+b1.display_balance()"""
+
+"""class animal:
+    def __init__(self,sound):
+        self.sound=sound
+class dog(animal):
+    def __init__(self,sound):
+        super().__init__(sound)
+d1=dog("bark")
+print(d1.sound)"""
 
 """class person:
-    def __init__(self,name):
-        self.__name=name
-class employee(person):
-    def __init__(self,name,salary):
-        super().__init__(name)
-        self.__salary=salary
-    def display(self):
-        print("person salary is :",self.__salary)
-p1=employee("Mutuu",5000)
-p2=employee("Poorna chandra",45000)
-p1.display()
-p2.display()"""
-
-"""class bike:
-    def speed(self):
-        print("bike speed is 69")
-class car:
-    def speed(self):
-        print("car speed is 120")
-objects=[bike(),car()]
-for obj in objects:
-    obj.speed()"""
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def display_person(self):
+        print("Nmae",self.name)
+        print("Age",self.age)
+class teacher(person):
+    def __init__(self,subject,age,name):
+        
+        super().__init__(name,age)
+        self.subject=subject
+    def display_teacher(self):
+        self.display_person()
+        print("subjects",self.subject)
+t1=teacher("muttu",20,"maths")
+t1.display_teacher()"""
 
 
 
 
 
-    
+
+
+
+
 
 
