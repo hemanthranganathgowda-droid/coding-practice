@@ -52,7 +52,7 @@ e2=employee("thomas",40000,3000,14)
 print(e1.salary())
 print(e2.salary())"""
 
-class banckaccount:
+"""class banckaccount:
     def __init__(self,balanc):
         self.__balance=balance
     def get_balance(self):
@@ -71,10 +71,87 @@ b1=banckaccount(200)
 b1.set__balance(5000)
 b1.get__balance(7000)
 b1.withdraw(2000)
-print(b1.banckaccount)
+print(b1.banckaccount)"""
 
+"""class banckaccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def deposit(self,amount):
+        if amount>0:
+            self.__balance+=amount
+            return self.__balance
+        else:
+            return "amount is invalid"
+    def withdraw(self,amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            return "transaction sucessfully"
+        else:
+            return "insufficient balance"
+b1=banckaccount(40)
+print(b1.withdraw(40))
+print(b1.deposit(20))"""
+
+""""class animal:
     
-    
+    def speak(self):
+        print("animal is speaking")
+class dog(animal):
+    def speak(self):
+        print("dog  barking")
+    def bark (self):
+        print("dog is barking")
+d=dog()
+d.bark()
+d.speak()0"""
+"""class parent:
+    def __init__(self,name):
+        self.name=name
+    def info(self):
+        print("i am a person")
+class employee(parent):
+    def job(self):
+        print("i am an employee")
+class manager(employee):
+    def officer(self):
+        print("like a owner of the company")
+m=manager("wishva")
+m.officer()
+m.job()
+m.info()"""
+
+"""class circle:
+    def area(self):
+        return 2*3.14*5
+        
+class square:
+    def area(self):
+        return 4*4
+        
+c=circle()
+s=square()   
+print(c.area())
+print(s.area())"""
+
+"""with open("file.txt","w") as file:
+    file.write("hemanth gowda")"""
+with open("data.txt","r")as file:
+    data=file.read()
+    print(data)
+
+with open("data.txt","w")as file:
+    file.write("Welcome to tumkur")
+with open("data.txt","r") as file:
+    data=file.read()
+    print(data)
+
+with open("data.txt","r") as file:
+    data=file.read()
+    count=len(data)
+    print("total character",count)
+
+
+
 
 
 
