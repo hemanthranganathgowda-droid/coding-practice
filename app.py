@@ -25,13 +25,13 @@ def hemanth():
 if __name__=='__main__':
     app.run(debug=True)"""
 
-from flask import Flask,request
+"""from flask import Flask,request
 app=Flask(__name__)
 @app.route('/send-data',methods=['post'])
 def send_data():
     data = request.json
     return {"you_sent":data}
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=True)"""
 
 
