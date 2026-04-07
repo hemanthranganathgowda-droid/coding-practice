@@ -13,7 +13,7 @@ def login():
 app.run(debug=True)"""
 
 
-from flask import Flask,request
+"""from flask import Flask,request
 app=Flask(__name__)
 @app.route('/login')
 def login():
@@ -23,4 +23,21 @@ def login():
         return "login successfully"
     else:
         return "invalid user name"
+app.run(debug=True)"""
+
+from flask import Flask,request
+app=Flask(__name__)
+users=[
+    {'username':'hemanth','password':'1234'},
+    {'username':'ravi',}
+]
+@app.route('/login',methods=['POST'])
+def logic():
+    data=request.json
+    username=data['username']
+    password=data['password']
+    for user in users:
+        if user['username']==username and user['password']==password:
+            return "login sucess"
+        return "invalid user"
 app.run(debug=True)
