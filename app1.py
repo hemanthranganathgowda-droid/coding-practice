@@ -29,7 +29,7 @@ from flask import Flask,request
 app=Flask(__name__)
 users=[
     {'username':'hemanth','password':'1234'},
-    {'username':'ravi',}
+    {'username':'ravi','password':'5678'}
 ]
 @app.route('/login',methods=['POST'])
 def logic():
