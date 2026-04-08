@@ -1,16 +1,3 @@
-"""from flask import Flask,request,jsonify
-app=Flask(__name__)
-@app.route('/user')
-
-    
-@app.route('/login',methods=['post'])
-def login():
-    data=request.json
-    if data['user_name']=='Hemanth' and data['passward']=='1234':
-        return jsonify({'message':'login sucessfully'})
-    else:
-        return jsonify({'message':'invalid user name'})
-app.run(debug=True)"""
 
 
 """from flask import Flask,request
@@ -40,4 +27,10 @@ def logic():
         if user['username']==username and user['password']==password:
             return "login sucess"
         return "invalid user"
+app.run(debug=True)
+from flask import Flask,request,jsonify
+app=Flask(__name__)
+@app.route('/')
+def api():
+    return jsonify("message":"this is API data")
 app.run(debug=True)
