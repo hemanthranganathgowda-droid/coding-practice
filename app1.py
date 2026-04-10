@@ -29,8 +29,30 @@ def logic():
         return "invalid user"
 app.run(debug=True)
 from flask import Flask,request,jsonify
-app=Flask(__name__)
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+
+# Database configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+# Create a table (Model)
+class Student(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    branch = db.Column(db.String(50))
+
+# Create database
+with app.app_context():
+    db.create_all()
+
 @app.route('/')
-def api():
-    return jsonify("message":"this is API data")
-app.run(debug=True)
+def home():
+    return "Database Connected Successfully 🚀"
+
+if __name__ == '__main__':
+    app.run(debug=True)
